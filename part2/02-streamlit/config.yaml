@@ -71,4 +71,4 @@ classes:
   - Not Wear
   - Female
   - over 60
-model_path: ../../assets/mask_task/model.pth
+model_path: assets/mask_task/model.pth

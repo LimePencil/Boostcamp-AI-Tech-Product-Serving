@@ -7,7 +7,7 @@ from typing import Tuple
 
 @st.cache
 def load_model() -> MyEfficientNet:
-    with open("config.yaml") as f:
+    with open("part2/02-streamlit/config.yaml") as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
