@@ -2,7 +2,7 @@ albumentations==1.1.0
 timm==0.6.11
 torch==1.13.0
 numpy==1.23.4
-streamlit==1.1.0
+streamlit==1.14.0
 Pillow==9.3.0
 gdown==4.5.3
 pytorch_lightning==1.8.0
