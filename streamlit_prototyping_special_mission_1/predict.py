@@ -1,3 +1,4 @@
+import os
 import models
 import pytorch_lightning as pl
 import torch
@@ -7,6 +8,7 @@ import io
 import numpy as np
 from albumentations.pytorch.transforms import ToTensorV2
 import streamlit as st
+import gdown
 
 class MaskModel(pl.LightningModule):
 
@@ -21,6 +23,9 @@ class MaskModel(pl.LightningModule):
 
 @st.cache
 def load_model(model_path,hparam_path):
+    if not os.path.isfile(model_path):
+        url="1ZlR6DjQH_VSCncgqXcUKMUAfpHMBwW66"
+        gdown.download(id=url,output=model_path)
     model = MaskModel.load_from_checkpoint(model_path,hparams_file= hparam_path).model
     model.eval()
     return model
