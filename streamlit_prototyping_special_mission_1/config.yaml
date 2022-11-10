@@ -71,5 +71,5 @@ classes:
   - Not Wearing
   - Female
   - Over 60
-model_path: /home/limepencil/Boostcamp-AI-Tech-Product-Serving/streamlit_prototyping_special_mission_1/model_pretrained.ckpt
-hparam_path: /home/limepencil/Boostcamp-AI-Tech-Product-Serving/streamlit_prototyping_special_mission_1/hparams.yaml
+model_path: Boostcamp-AI-Tech-Product-Serving/streamlit_prototyping_special_mission_1/model_pretrained.ckpt
+hparam_path: Boostcamp-AI-Tech-Product-Serving/streamlit_prototyping_special_mission_1/hparams.yaml
